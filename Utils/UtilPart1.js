@@ -30,8 +30,6 @@ document.getElementById("part1-1").addEventListener("keyup", function (event) {
 }
 );
 
-
-
 document.getElementById("button-exo1-p2").addEventListener("click", function () {
 
 
@@ -47,16 +45,16 @@ document.getElementById("button-exo1-p2").addEventListener("click", function () 
     // if yes put the duplicate word in the id puissance  
     // if no, return "this word is not from the language"
     if (isNaN(n)) {
-        document.getElementById("puissance").innerHTML = "Enter an interger";
+        document.getElementById("puissance").innerHTML = "Enter an positive interger";
+    } else {
+        var duplicate = word.repeat(n);
+        if (checkCharacters(word) || word == "") {
+            document.getElementById("puissance").innerHTML = duplicate;
+        }
+        else {
+            document.getElementById("puissance").innerHTML = "this word is not from the language";
+        }
     }
-    var duplicate = word.repeat(n);
-    if (checkCharacters(word) || word == "") {
-        document.getElementById("puissance").innerHTML = duplicate;
-    }
-    else {
-        document.getElementById("puissance").innerHTML = "this word is not from the language";
-    }
-
 });
 
 // add event click Enter on the input
@@ -66,3 +64,11 @@ document.getElementById("part1-2").addEventListener("keyup", function (event) {
         document.getElementById("button-exo1-p2").click();
     }
 });
+
+
+document.getElementById("part1-2-n").addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("button-exo1-p2").click();
+    }
+})
