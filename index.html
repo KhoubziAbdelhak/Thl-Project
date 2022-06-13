@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tp THL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark text-light py-3">
+        <div class="container">
+            <div class="navbar-brand">Théorie des Langages</div>
+    </nav>
+
+    <!-- Main -->
+    <section class="bg-info text-light p-5">
+        <div class="container">
+
+            <h2 class="mb-3 mb-md-0" id="title">Part 1 :</h2>
+
+            <div class="input-group mb-3 word-input">
+                <input type="text" class="form-control" id="part1-1" placeholder="Enter a word">
+                <button class="btn btn-dark" type="button" id="button-exo1-p1">Button</button>
+            </div>
+            <div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="result-exo1" rows="1" readonly></textarea>
+                </div>
+            </div>
+
+            <div class="input-group mb-3 word-input">
+                <input type="text" class="form-control" id="part1-2" placeholder="Enter a word">
+                <span class="input-group-text">#</span>
+                <input type="text" class="form-control" id="part1-2-n" placeholder="Enter n">
+                <button class="btn btn-dark" type="button" id="button-exo1-p2">Button</button>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" Id="puissance" rows="1" readonly></textarea>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-secondary text-light p-5">
+        <div class="container">
+            <h2 class="mb-3 mb-md-0" id="title">Part 2 :</h2>
+
+            <div class="input-group mb-3 word-input">
+                <input type="text" class="form-control" id="part2" placeholder="Enter a Number">
+                <button class="btn btn-dark" type="button" id="button-exo2">Button</button>
+            </div>
+            <div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="result-exo2" rows="1" readonly></textarea>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <script src="./app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

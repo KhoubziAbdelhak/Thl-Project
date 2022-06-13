@@ -1,0 +1,36 @@
+/* abouve 768px word-input 50% width */
+@media (min-width: 768px) {
+    .word-input {
+        width: 50%;
+    }
+}
+
+
+#title {
+    font: 3em sans-serif;
+    font-weight: bolder;
+    color: black;
+    padding-bottom: 25px;
+}
+
+p {
+    font-size: 2em;
+    color: black;
+}
+
+#result-exo1 {
+    font-size: 2em;
+}
+
+#part1-2 {
+    width: 40%;
+}
+
+#puissance {
+    font: 2em sans-serif;
+    color: black;
+}
+
+#result-exo2 {
+    font-size: 2em;
+}
