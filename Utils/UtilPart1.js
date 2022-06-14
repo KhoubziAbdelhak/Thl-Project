@@ -1,4 +1,4 @@
-// the code for the paert 1 of the utils file
+// the code for the part 1 of the utils file
 
 function checkCharacters(str) {
     return /^[a-b-c]+$/.test(str);

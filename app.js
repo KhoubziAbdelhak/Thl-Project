@@ -7,3 +7,4 @@ function include(file) {
 
 include("Utils/UtilPart1.js");
 include("Utils/UtilPart2.js");
+include("Utils/UtilPart3.js");
