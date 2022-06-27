@@ -7,7 +7,7 @@
 // create a function to check if a word is in the language
 
 // function check if a word has only a and b
-function checkCharacters(str) {
+function checkCharactersPart3(str) {
 	return /^[a-b]+$/.test(str);
 }
 
@@ -35,7 +35,7 @@ function checkWord(str) {
 	if (str === "") {
 		return true;
 	}
-	if (checkCharacters(str) == true) {
+	if (checkCharactersPart3(str) == true) {
 		return check(str);
 	}
 
