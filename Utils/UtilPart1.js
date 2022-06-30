@@ -17,7 +17,7 @@ document.getElementById("button-exo1-p1").addEventListener("click", function () 
     if (checkCharacters(word) || word == "") {
         document.getElementById("result-exo1").innerHTML = reverse;
     } else {
-        document.getElementById("result-exo1").innerHTML = "this word is not from the language";
+        document.getElementById("result-exo1").innerHTML = "Ce mot n'appartient pas au langage";
     }
 });
 
@@ -45,14 +45,14 @@ document.getElementById("button-exo1-p2").addEventListener("click", function () 
     // if yes put the duplicate word in the id puissance  
     // if no, return "this word is not from the language"
     if (isNaN(n)) {
-        document.getElementById("puissance").innerHTML = "Enter an positive interger";
+        document.getElementById("puissance").innerHTML = "Veuillez saisir un entier positif svp";
     } else {
         var duplicate = word.repeat(n);
         if (checkCharacters(word) || word == "") {
             document.getElementById("puissance").innerHTML = duplicate;
         }
         else {
-            document.getElementById("puissance").innerHTML = "this word is not from the language";
+            document.getElementById("puissance").innerHTML = "Ce mot n'appartient pas langage";
         }
     }
 });
